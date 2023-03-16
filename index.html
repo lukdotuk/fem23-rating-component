@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+  <title>Frontend Mentor | Interactive rating component</title>
+</head>
+<body>
+  <main class="main">
+    
+    <section class="submit" id="submit">
+      <div class="border flex">
+        <img src="./assets/images/icon-star.svg" 
+          alt="dark background, mobile phone in the center and an orange payment card on the left ">
+      </div>
+      <h1 class="submit__title">How did we do?</h1>
+      <p class="submit__text">
+        Please let us know how we did with your support request.
+        All feedback is appreciated to help us improve our offering!
+      </p>
+      <div class="buttons flex">
+        <button class="btn" id="btn1">1</button>
+        <button class="btn" id="btn2">2</button>
+        <button class="btn" id="btn3">3</button>
+        <button class="btn" id="btn4">4</button>
+        <button class="btn" id="btn5">5</button>
+      </div>
+       <button class="submit-btn" onclick="change()">Submit</button>
+    </section>
+
+    <section class="thanks flex" id="thanks">    
+      <img class="thanks__img" src="./assets/images/illustration-thank-you.svg" 
+        alt="dark background, mobile phone in the center and an orange payment card on the left ">
+      <p class="thanks__btn">You selected <span id="selection"></span> out of 5</p>
+      <h2 class="thanks__tittle">Thank you!</h2>
+      <p class="thanks__text">
+        We appreciate you taking the time to give a rating.
+        If you ever need more support, don't hesitate to get in touch!
+      </p>
+    </section>
+
+  </main>
+</body>
+</html>
